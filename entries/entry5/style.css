@@ -1,0 +1,282 @@
+
+
+/*title*/
+.title{
+    font-size: 210px;
+    font-family: 'Anton', sans-serif;
+    line-height: 170px;
+    left: 60px;
+    position: absolute;
+    top: 60px;
+}
+h1{
+    font-size: 250px;
+    left: 180px;
+    top: 0;
+    position: absolute;
+}
+
+/*image block*/
+*{
+    box-sizing: border-box;
+}
+.transition{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+.text{
+    font-size: 35px;
+    font-family: 'Nanum Brush Script', cursive;
+    text-align: center;
+    line-height: 90px;
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+.imagestack{
+    position: relative;
+    width: 100%;
+    top: 300px;
+}
+.pic1{
+    width: 80%
+}
+.pic2{
+    width: 80%;
+    position:absolute;
+    right: 0;
+    top: 500px;
+    filter: blur(5px);
+}
+
+/*menu*/
+.menu{
+    position: fixed;
+    right: 80px;
+    top: 160px;
+    background-color: rgba(255, 255, 255, 0.411);
+    text-align: right;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: larger;
+}
+a:link{
+    color:#000000;
+    text-decoration: none;
+}
+a:visited{
+    color:#000000;
+}
+a:hover{
+    color:rgb(34, 137, 34);
+}
+
+/*general setting*/
+.body{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    top: 600px;
+}
+p{
+    font-size: 26px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-family: 'Nanum Brush Script', cursive;
+}
+img {
+    width: 100%;
+    display: block;
+}
+audio{
+    width: 150px;
+    position: fixed;
+    right: 5%;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: white;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: #80af3e;
+}
+
+
+/*image gallery*/
+.gallery{
+    display: flex;
+    position: relative;
+    max-width: 80%;
+    top: 600px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    left: 4%;
+    flex-flow: wrap;
+}
+.gallery div{
+    align-self: center;
+}
+.font{
+    font-family: 'Rock Salt', cursive;
+    color: #ffffff;
+    position: relative;
+    top: 60px;
+    right: 600px;
+}
+
+/*page setting*/
+.space{
+    height: 30px;
+    position: relative;
+    background-color: #2b2b2b;
+    top: 700px;
+}
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+/*background switch*/
+.switch {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+.switch input{
+    display: none;
+}
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: #a9a9a9;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+@media only screen and (max-width:1024px){
+    .body{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: 500px;
+    }
+    .title{
+        width: 100%;
+        font-size: 160px;
+        font-family: 'Anton', sans-serif;
+        line-height: 170px;
+        left: 0;
+        position: absolute;
+        top: 60px;}
+    h1{
+        font-size: 180px;
+        left: 50px;
+        top: 210px;
+        position: absolute;
+    }
+    .text{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2b2b2b;
+        text-align: center;
+        line-height: 60px;
+        position: absolute;
+        top: 45%;
+        left: 47%;
+    }
+    .transition{max-width: 100%;}
+    .imagestack{
+        position: relative;
+        width: 100%;
+        top: 200px;
+    }
+    .pic2{
+        width: 80%;
+        position:absolute;
+        right: 0;
+        top: 500px;
+        filter: blur(5px);
+    }
+    audio{
+        position: fixed;
+        right: 10%;
+    }
+    .space{
+        height: 30px;
+        position: relative;
+        background-color: #2b2b2b;
+        top: 140px;
+    }
+}
+
+@media only screen and (max-width:862px){
+    .body{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: 300px;
+    }
+    .title{
+        width: 100%;
+        font-size: 170px;
+        font-family: 'Anton', sans-serif;
+        line-height: 140px;
+        left: 0;
+        position: absolute;
+        top: 60px;}
+    h1{
+        font-size: 150px;
+        left: 70px;
+        top: 170px;
+        position: absolute;
+    }
+    .text{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2b2b2b;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        top: 45%;
+        left: 47%;
+    }
+    audio{
+        position: fixed;
+        right: 10%;
+    }
+    .pic2{
+        width: 80%;
+        position:absolute;
+        right: 0;
+        top: 280px;
+        filter: blur(5px);
+    }
+    .space{
+        height: 30px;
+        position: relative;
+        background-color: #2b2b2b;
+        top: 30px;
+    }
+}
