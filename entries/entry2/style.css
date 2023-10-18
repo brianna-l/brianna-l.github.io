@@ -434,7 +434,7 @@ body{
     border-radius: 50%;
     bottom: 50px;
     right: 30px;
-    content: url(/icons/youjiantou.png);
+    content: url(/brianna-l.github.io/entries/icons/youjiantou.png);
 }
 .back{
     position: fixed;
@@ -446,7 +446,7 @@ body{
     border-radius: 50%;
     bottom: 120px;
     right: 30px;
-    content: url(/icons/zuojiantou.png);
+    content: url(/brianna-l.github.io/entries/icons/zuojiantou.png);
 }
 .home{
     position: fixed;
@@ -458,5 +458,5 @@ body{
     border-radius: 50%;
     top: 100px;
     left: 30px;
-    content: url(/icons/shouye.png);
+    content: url(/brianna-l.github.io/entries/icons/shouye.png);
 }

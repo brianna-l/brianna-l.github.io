@@ -107,13 +107,13 @@
     position: fixed;
     height: 30px;
     right: 80px;
-    bottom: 130px;
-    content: url(/icons/zuojiantou.png);
+    bottom: 180px;
+    content: url(/brianna-l.github.io/entries/icons/zuojiantou.png);
 }
 .right{
     position: fixed;
     height: 30px;
     right: 80px;
-    bottom: 180px;
-    content: url(/icons/youjiantou.png);
+    bottom: 130px;
+    content: url(/brianna-l.github.io/entries/icons/youjiantou.png);
 }
