@@ -1,0 +1,318 @@
+body{
+    background-color: #F6F0F0;
+}
+
+a{
+    text-decoration: none;
+    color: #BD3E36;
+    font-family: 'MuseoModerno', sans-serif;
+    font-variation-settings: 'wght' 700;
+}
+.menu{
+    font-size: 4vw;
+    width: 83%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin: auto;
+}
+.combo{
+    display: flex;
+}
+.combo div{
+    padding: 0 1vw;
+}
+
+.seg1{
+    height: 100vh;
+    position: relative;
+    top: 20vh;
+    z-index: 2;
+}
+.red1{
+    height: 40vh;
+    width: 25vw;
+    background: linear-gradient(180deg, #FB6746 0%, rgba(217, 217, 217, 0.00) 100%);
+    position: absolute;
+    top: 20vh;
+    left: 8vw;
+}
+.red2{
+    height: 70vh;
+    width: 65vw;
+    background: linear-gradient(180deg, #FE1F00 0%, #023536 100%);
+    position: absolute;
+    top: 55vh;
+    right: 12vw;
+}
+.red3{
+    height: 30vh;
+    width: 16vw;
+    background: linear-gradient(180deg, #D60D00 0%, rgba(217, 217, 217, 0.00) 100%);
+    position: absolute;
+    top: 0;
+    right: 10vw;
+}
+
+.text1{
+    color: #013F3E;
+    font-family: Jost;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.00625rem;
+    position: absolute;
+    top: -10vh;
+    left: 8.5vw;
+}
+.text2{
+    color: #013D3D;
+    font-family: Jost;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.02rem;
+    position: absolute;
+    top: 9vh;
+    left: 28vw;
+}
+.text3{
+    color: #4C4242;
+    font-family: Jost;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.03188rem;
+    position: absolute;
+    top: 12vh;
+    left: 39vw;
+}
+.text4{
+    color: #6D4241;
+    font-family: Jost;
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.04125rem;
+    position: absolute;
+    top: 21vh;
+    left: 50vw;
+}
+.text5{
+    color: #A21D00;
+    font-family: Jost;
+    font-size: 12vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.05219rem;
+    position: absolute;
+    top: 35vh;
+    left: 55vw;
+}
+.text6{
+    color: #7D0800;
+    font-family: Jost;
+    font-size: 18.5vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.0725rem;
+    position: absolute;
+    top: 50vh;
+    left: 48vw;
+}
+
+.green1{
+    width: 11.5vw;
+    height: 2vh;
+    background: rgba(1, 52, 53, 0.63);
+    position: absolute;
+    left: 8vw;
+    top: 13vh;
+}
+.green2{
+    background: rgba(1, 52, 53, 0.92);
+    width: 13vw;
+    height: 3vh;
+    position: absolute;
+    left: 5vw;
+    top: 45vh;
+}
+.green3{
+    background: rgba(1, 52, 53, 0.71);
+    width: 11.5vw;
+    height: 3vh;
+    position: absolute;
+    right: 6vw;
+    top: 12vh;
+}
+
+.seg2{
+    height: 190vh;
+    width: 100%;
+    position: relative;
+    background: #013435;
+    z-index: 1;
+}
+.volimg{
+    height: 90vh;
+    width: 100%;
+    background: url(imgs/2.jpg);
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.imgbox{
+    width: 83%;
+    margin: 0 8vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 3;
+    bottom: 10vh;
+    display: flex;
+}
+.imgbox img{
+    background-size: cover;
+}
+.item{
+    border: 2px solid white;
+    width: 25%;
+    display: flex;
+}
+.item1{
+    background-image: url(imgs/3.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+.item2{
+    background-image: url(imgs/4.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+.item3{
+    background-image: url(imgs/5.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+.item4{
+    background-image: url(imgs/6.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+.smoke{
+    width: 90%;
+    margin: 0 5vw;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    display: flex;
+    padding: 0 5vw;
+}
+.smoke span{
+    position: relative;
+    bottom: 10px;
+    width: 7vw;
+    height:8vh;
+    border: 1px solid white;
+    margin: 0 2vw;
+    animation: animate 10s linear infinite;
+    animation-duration: calc(30s / var(--i));
+    transform-origin: bottom;
+}
+@keyframes animate{
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    70% {
+        transform: translateY(-60vh) scale(1);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0);
+    }
+}
+
+.title{
+    color: #F6F0F0;
+    text-shadow: 0px 46px 4px rgba(255, 255, 255, 0.12);
+    font-family: MuseoModerno;
+    font-size: 14.5vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.0725rem;
+    z-index: 4;
+    position: absolute;
+    top: 86vh;
+    left: 10vw;
+}
+.explode{
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background: url(imgs/1.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    top: 70vh;
+    right: 0;
+}
+.box{
+    width: 70%;
+    position: absolute;
+    z-index: 6;
+    top: 170vh;
+    left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.textbox{
+    width: 70%;
+    aspect-ratio: 3/2;
+    color: #F6F0F0;
+    font-family: Jost;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0075rem;
+    z-index: 5;
+    align-self: flex-start;
+    display: flex;
+}
+.textright{
+    transform: rotate(90deg);
+    color: #F6F0F0;
+    font-family: Jost;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.015rem;
+    z-index: 5;
+    align-self: center;
+    display: flex;
+    flex: 1;
+}
+.textleft{
+    color: #F6F0F0;
+    font-family: Jost;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.015rem;
+    z-index: 5;
+    align-self: flex-end;
+    display: flex;
+    flex-basis: 100%;
+}
