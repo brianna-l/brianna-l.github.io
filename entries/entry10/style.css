@@ -1,0 +1,57 @@
+.nav{
+    font-family: arial;
+    font-size: 50px;
+    color: rgb(49, 42, 42);
+    position: fixed;
+    text-align: left;
+    transform: rotate(90deg);
+    opacity: 1;
+    top: 20%;
+    transition:  all 3s;
+    z-index: 1;
+  }
+  .nav:hover {
+    cursor:  pointer;
+  }
+.normal {
+    opacity: 0;;
+}
+
+
+body {
+    background-color:  black;
+  }
+  
+  section {
+    display:  flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:  center;
+    height:  130vh;
+  }
+  
+  .button {
+    padding: 30px 50px;
+    border-radius: 40%;
+    background-color:  #27417e;
+    color:  black;
+    font-size:  60px;
+    font-weight: bolder;
+    text-align:  center;
+    transition:  all 100ms;
+    z-index: 2;
+  }
+  
+  .button:hover {
+    background-color: #c2c7d1;
+    cursor:  pointer;
+  }
+
+.buttonOn {
+    background-color:  black;
+    color:  #27417e;
+  }
+  
+  .light {
+    background-color: #27417e;
+  }

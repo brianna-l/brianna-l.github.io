@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: crosshair;
+    user-select: none;
+  }
+
+
+/*menu*/
+a{
+    text-decoration: none;
+    color: #9B9B9B;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-variation-settings: 'wght' 700;
+}
+
+.menu{
+    font-size: 4vw;
+    width: 83%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin: auto;
+    z-index: 11;
+}
+.combo{
+    display: flex;
+}
+.combo div{
+    padding: 0 1vw;
+}
+
+/*Title*/
+.line-list {
+    list-style: none;
+    padding-top: 5vh;
+    margin: 0;
+  }
+  
+.line-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8vh;
+    position: relative;
+  }
+  
+.line {
+    height: 2px;
+    background-color: #FF4848;
+    margin-bottom: 2vh; /* Adjust as needed for spacing between lines */
+  }
+
+.line1 {
+    width: 40vw; /* Set width for each line div */
+  }
+  
+.line2 {
+    width: 40vw;
+    transform: translateX(110%);
+  }
+
+.line3 {
+    width: 50vw;
+  }
+  
+.line4 {
+    width: 70vw;
+    transform: translateX(30%);
+  }
+
+.title {
+    position: absolute;
+    top: -4vh; /* Adjust title's position above the line-item */
+    left: 5%;
+    font-size: 9.7vw; /* Adjust title font size */
+    font-family: 'Big Shoulders Inline Text', sans-serif;
+    z-index: 1;
+  }
+.title1{
+    transform: translateX(130%);
+}
+.title2{
+    transform: translateX(230%);
+}
+.title4{
+    transform: translateX(140%);
+}
+
+/*drawing pad*/
+canvas {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    touch-action: none;
+  }
+
+/*text box*/
+.textbox1{
+    position: absolute;
+    top: 29vh;
+    width: 43vw;
+    height: 20vh;
+    z-index: 15;
+    transition: all 0.3s ease;
+    opacity: 30%;
+}
+.line5{
+    width: 100%;
+    height: 1px;
+    margin: 0.75vh;
+}
+.text1{
+    position: absolute;
+    top: -0.5vh;
+    left: 5%;
+    font-size: 1.1vw;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    color: #393939;
+}
+.textbox1:hover{
+    opacity: 1;
+}
+/*2*/
+.textbox2{
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    z-index: 15;
+    right: 10vw;
+    top: 9vh;
+    opacity: 30%;
+    transition: all 0.3s ease;
+}
+.textbox2:hover{
+    opacity: 1;}
+.line6{
+    width: 100%;
+    height: 1px;
+    margin: 0.75vh;
+}
+/*3*/
+.textbox3{
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    z-index: 15;
+    right: 6vw;
+    top: 50vh;
+    opacity: 30%;
+    transition: all 0.3s ease;
+}
+.textbox3:hover{
+    opacity: 1;}
+.line7{
+    width: 100%;
+    height: 1px;
+    margin: 0.75vh;
+}
+/*4*/
+.textbox4{
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    z-index: 15;
+    right: 9vw;
+    top: 60vh;
+    opacity: 30%;
+    transition: all 0.3s ease;
+}
+.textbox4:hover{
+    opacity: 1;}
+.line8{
+    width: 100%;
+    height: 1px;
+    margin: 0.75vh;
+}
+/*6*/
+.textbox6{
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    z-index: 15;
+    left: 3vw;
+    top: 72vh;
+    opacity: 30%;
+    transition: all 0.3s ease;
+}
+.textbox6:hover{
+    opacity: 1;}
+.line10{
+    width: 100%;
+    height: 1px;
+    margin: 0.75vh;
+}
+
+/*rainbow*/
+.rainbow {
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    height: 30px; /* Increased height for better wave effect */
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    animation: moveRainbow 5s linear infinite;
+    transform-origin: 50% 50%;
+    opacity: 60%;
+    filter: blur(10px);
+  }
+  
+  @keyframes moveRainbow {
+    0% { top: -10%; transform: translateY(0) rotateZ(0deg); opacity: 0;}
+    100% { top: 100%; transform: translateY(-50%) rotateZ(360deg);}
+  }
+  
+/*sparkles*/
+  .sparkles-container {
+    position: absolute;
+    width: max-content;
+    pointer-events: none;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #eb61cf;
+    border-radius: 50%;
+    opacity: 80%;
+    animation: sparkleAnim 13s infinite;
+  }
+  
+  @keyframes sparkleAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-100vh);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100vh);
+    }
+  }
+
+
+  /* For smartphones */
+@media only screen and (max-width: 768px) {
+    /* Adjust menu font size and padding */
+    body {
+        width: max-content;
+        overflow: inherit;
+        height: max-content
+    }
+    .menu {
+      font-size: 10vw;
+      padding: 10px 80px;
+      transform: translateX(-5%);
+    }
+  
+    /* Modify title font sizes and positions */
+    .title {
+      font-size: 10vw;
+      top: -3vh;
+    }
+    .title1{
+        transform: translateY(10%)translateX(50%);
+    }
+    .title2 {
+        transform: translateY(-260%)translateX(240%);
+    }
+    .title4 {
+        transform: translateY(150%)translateX(120%);
+    }
+    /* Adjust textbox positions and sizes */
+    .textbox1,
+    .textbox2,
+    .textbox3,
+    .textbox4,
+    .textbox6 {
+      width: 80%;
+      height: 25vh;
+      transform: translateY(8vh);
+    }
+    .text1 {
+        font-size: 3vw;
+        margin: 10vh 2vw;
+    }
+    .textbox1{
+        top: 4vh;
+    }
+    .textbox2{
+        top: 42vh;
+    }
+    .textbox3{
+        top: 87vh;
+    }
+    .textbox4{
+        top: 71vh;
+    }
+    .textbox6{
+        top: 97vh;
+    }
+    .sparkle-container {
+        position: absolute;width: max-content;overflow: hidden;
+    }
+    canvas {display: none;transform: translateY(-300%);position: absolute}
+  }
+  
