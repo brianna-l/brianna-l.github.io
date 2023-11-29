@@ -1,7 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    cursor: crosshair;
+    cursor: url('/brianna-l.github.io/imgs/favicon.png'), auto;
     user-select: none;
   }
 
