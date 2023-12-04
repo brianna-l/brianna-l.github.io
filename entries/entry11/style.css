@@ -92,9 +92,13 @@ a{
 /*drawing pad*/
 canvas {
     display: block;
-    z-index: 10;
-    position: fixed;
+    z-index: 100;
+    position: absolute;
     touch-action: none;
+    width: 20vw;
+    height: 20vh;
+    border: 2px solid black;
+    margin: 20%;
   }
 
 /*text box*/
