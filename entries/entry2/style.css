@@ -1,26 +1,29 @@
 /*main setting*/
 /*setting*/
-body{background-image: url(imgs/cl4.jpg);}
+body{
+    max-width: 100%;
+    background-image: url(imgs/cl4.jpg);}
 
-h1{font-size: 180px; color: #84ebff;text-align: left;font-family: 'Caveat', cursive;}
+h1{font-size: 8em; color: #84ebff;text-align: left;font-family: 'Caveat', cursive;}
 
-h2{color: rgb(125, 192, 194); text-align: left;font-size: 40px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+h2{color: rgb(125, 192, 194); text-align: left;font-size: 5em;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
-p{color: #d1c2c2;size: 6;}
+p{color: #d1c2c2;font-size: 1em;}
 
 /*body*/
 .header{
     font-family: Elsie;
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     background: #ffffffd4;
-    padding: 0 10px;
-    height: 40px;
+    padding: 0 1em;
+    height: 5vh;
     overflow: hidden;
     animation: wipe 5s infinite;
+    bottom: 0;
 }
 .line{
-    font-size: 30px;
+    font-size: 3em;
     line-height: 40px;
     text-align: justify;
 }
@@ -63,7 +66,7 @@ p{color: #d1c2c2;size: 6;}
 
 
 body{
-    min-height: 100vh;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -72,40 +75,29 @@ body{
 }
 
 /*header*/
-.DIVh1{
-    margin:20px 300px;
-    transition: 3s;
-    transition-duration: 3s;
-}
-.DIVh1:hover{
-    filter: blur(50px);
-}
+
 .intro{
+    max-width: 100%;
     position: relative;
-    float: left;
     left: 4%;
     
 }
 .lead{
-    float: right;
+    max-width: 100%;
     position: relative;
     right: 20%;
 }
-.content {
-    float: right;
-    position: relative;
-    text-align: right;
-    right: -50%;
-}
+
 
 
 /*part1*/
 .container1{
     height: 400;
-    max-width: 100%;
+    max-width: 90%;
+    z-index: 9;
 }
     #anm1{
-        height: 100px;
+        height: 3em;
         background-color: rgb(120, 191, 200);
         aspect-ratio: 0.5;
         animation: mymove 5s infinite;
@@ -127,17 +119,14 @@ body{
     }
     .box1{
         display:grid;
-        align-items: center;
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2px;
         width: 80%;
-        margin: auto;
-        padding: auto;
     }
     img{
-        height: 450px;
-        width: 750px;
+        height: 50vh;
+        width: 70vw;
         transition: 2s;
         transition-duration: 2s;
     }   
@@ -146,7 +135,8 @@ body{
         border-radius: 50%;
     }
     .text1{
-        font-size: 20px;
+        padding-left: 3em;
+        font-size: 0.4em;
         font-family: 'Times New Roman', Times, serif;
         font-family: 'Times New Roman', Times, serif;
         transition: 1s;
@@ -157,13 +147,13 @@ body{
         filter: brightness(1.5);
         }
     .shape1 {
-        font-size: 30px;
+        font-size: 3em;
         font-family: sans-serif;
         align-content: center;
         position: relative;
         z-index: 5;
-        width: 200px;
-        height: 300px;
+        width: 20vw;
+        height: 30vh;
         backdrop-filter: blur(25px);
         border-radius: 50%;
         border: 0.5px solid rgba(325, 325, 325, 0.5);
@@ -174,29 +164,27 @@ body{
 .container2{
     height: 400;
     max-width: 100%;
-    align-content: center;
-    justify-content: center;
+    margin-left: 12vw;
+    overflow: hidden;
+    z-index: 10;
 }
     .box2{
         display:grid;
         align-items: center;
-        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 0px;
-        width: 80%;
+        column-gap: 6px;
+        width: 100%;
         margin: auto;
         padding: auto;
     }
         .shape2{
-            align-items: right;
-            justify-content: right;
-            width: 200px;
-            height: 200px;
+            width: 25vw;
+            height: 30vh;
             border: 0.5px solid rgba(325, 325, 325, 0.5);
             border-radius: 50%;
         }
         .text2{
-            font-size: 20px;
+            font-size: 1.1em;
             float: right;
             font-family: 'Times New Roman', Times, serif;
             transition: 1s;
@@ -238,11 +226,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 95%;
 }
 .a{
     position: relative;
-    position: 500px;
-    top: 220px;
+    position: 50em;
+    top: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +285,7 @@ body{
 /*flyer*/
 .sky{
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 100px;
+    font-size: 3em;
     background: url(imgs/wt1.jpg) 50% 50%; 
     background-size: cover;
     color:transparent;
@@ -315,148 +304,84 @@ body{
 /*poem*/
 .box3{
     max-width: 100%;
+    margin-bottom: 10vh;
 }
 .poem{
-    height: 300px;
+    height: 50vh;
     aspect-ratio: 4/1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1;
     justify-content: space-around;
-    padding: 10px;
+    padding: 2em;
     background-color: rgba(240, 248, 255, 0.31);
     position: relative;
-    top: 0;
-    left: 30px;
+    font-size: 0.9em;
+    margin-bottom: 20vh;
 }
 .p1{
-    height: 130px;
+    height: 50%;
     border: 1px solid #bfeaef;
-    padding: 10px;
+    padding: 2em;
     flex: 50%;
     color: rgb(125, 173, 215);
 }
 .p2{
-    height: 130px;
+    height: 50%;
     border: 1px solid #bfeaef;
-    padding: 10px;
+    padding: 1em;
     flex: 50%;
     color: #0fb6c8;
 }
 .p3{
-    height: 130px;
+    height: 50%;
     border: 1px solid #bfeaef;
-    padding: 10px;
+    padding: 1em;
     flex: 50%;
     color: rgb(92, 131, 151);
 }
 .p4{
-    height: 130px;
+    height: 50%;
     border: 1px solid #bfeaef;
-    padding: 10px;
+    padding: 1em;
     flex: 50%;
     color: rgb(17, 153, 211);
 }
 .cloud{
-    text-align: center;
-    filter: drop-shadow(4px);
+    text-align: left;
     filter: blur(5px);
-    font-size: 300px;
+    font-size: 10em;
     position: absolute;
-    margin-left: 500px;
+    margin-left: 0;
     transition-duration: 3s;
 }
 .cloud:hover {
     filter: blur(40px);
 }
 
-/*ending*/
-.ending{
-    width: 600px;
-    height: 600px;
-    background-image: url(imgs/cl8.jpg);
-    background-size: cover;
-}
-.anm3{
-    text-align: center;
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 120px;
-}
-.cloud2{
-    filter: drop-shadow(4px);
-    filter: blur(5px);
-    font-size: 200px;
-    position: relative;
-    transition-duration: 3s;
-}
-.cloud2:hover {
-    filter: blur(40px);
-}
 
-.rain{
-    position: relative;
+.menu{
+    font-size: 4vw;
+    width: 90%;
     display: flex;
-    z-index: 1;
-}
-.rain span{
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    margin: 15px 5px;
-    border-radius: 50%;
-    animation: rain 2s linear infinite;
-    animation-duration: calc(15s/var(--speed));
-    transform-origin: bottom;
-    left: 40px;
-}
-@keyframes rain{
-    0%{
-        transform: translateY(0);
-    }
-    70%{
-        transform: translateY(100px);scale: 1;
-    }
-    100%{
-        transform: translateY(100px);scale: 0;
-    }
-}
-.next{
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 6vw;
+    margin: auto;
+    z-index: 200;
     position: fixed;
-    height: 50px;
-    aspect-ratio: 1/1;
-    opacity: 50%;
-    color: #fff;
-    background-color: #ffffff5b;
-    border-radius: 50%;
-    bottom: 50px;
-    right: 30px;
-    content: url(/brianna-l.github.io/entries/icons/youjiantou.png);
 }
-.back{
-    position: fixed;
-    height: 50px;
-    aspect-ratio: 1/1;
-    opacity: 50%;
-    color: #fff;
-    background-color: #ffffff5b;
-    border-radius: 50%;
-    bottom: 120px;
-    right: 30px;
-    content: url(/brianna-l.github.io/entries/icons/zuojiantou.png);
+.combo{
+    display: flex;
 }
-.home{
-    position: fixed;
-    height: 50px;
-    aspect-ratio: 1/1;
-    opacity: 50%;
-    color: #fff;
-    background-color: #ffffff5b;
-    border-radius: 50%;
-    top: 100px;
-    left: 30px;
-    content: url(/brianna-l.github.io/entries/icons/shouye.png);
+.combo div{
+    padding: 0 1vw;
+}
+a{
+  text-decoration: none;
+  color: #d1edff;
+  font-family: 'Cinzel', serif;
 }

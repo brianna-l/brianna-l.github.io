@@ -89,17 +89,7 @@ a{
     transform: translateX(140%);
 }
 
-/*drawing pad*/
-canvas {
-    display: block;
-    z-index: 100;
-    position: absolute;
-    touch-action: none;
-    width: 20vw;
-    height: 20vh;
-    border: 2px solid black;
-    margin: 20%;
-  }
+
 
 /*text box*/
 .textbox1{
@@ -311,6 +301,5 @@ canvas {
     .sparkle-container {
         position: absolute;width: max-content;overflow: hidden;
     }
-    canvas {display: none;transform: translateY(-300%);position: absolute}
   }
   
