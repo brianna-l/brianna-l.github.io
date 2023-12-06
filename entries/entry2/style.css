@@ -11,6 +11,9 @@ h2{color: rgb(125, 192, 194); text-align: left;font-size: 5em;font-family: 'Gill
 p{color: #d1c2c2;font-size: 1em;}
 
 /*body*/
+.title{
+    margin-left: 15vw;
+}
 .header{
     font-family: Elsie;
     position: fixed;
@@ -122,11 +125,12 @@ body{
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2px;
-        width: 80%;
+        width: 100%;
+        margin-left: 10vw;
     }
     img{
         height: 50vh;
-        width: 70vw;
+        width: 100%;
         transition: 2s;
         transition-duration: 2s;
     }   
@@ -364,13 +368,13 @@ body{
 
 .menu{
     font-size: 4vw;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1vh 6vw;
-    margin: auto;
+    padding: 1vh;
+    margin-left: 2vw;
     z-index: 200;
     position: fixed;
 }

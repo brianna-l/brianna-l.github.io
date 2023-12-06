@@ -53,23 +53,27 @@ h1{
 
 /*menu*/
 .menu{
+    font-size: 1em;
+    width: 98%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+    margin: auto;
+    z-index: 200;
     position: fixed;
-    right: 80px;
-    top: 160px;
-    background-color: rgba(255, 255, 255, 0.411);
-    text-align: right;
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: larger;
 }
-a:link{
-    color:#000000;
-    text-decoration: none;
+.combo{
+    display: flex;
 }
-a:visited{
-    color:#000000;
+.combo div{
+    padding: 0 1vw;
 }
-a:hover{
-    color:rgb(34, 137, 34);
+a{
+  text-decoration: none;
+  color: #76ae62;
+  font-family: 'Rock Salt', cursive;
 }
 
 /*general setting*/
@@ -92,7 +96,8 @@ img {
 audio{
     width: 150px;
     position: fixed;
-    right: 5%;
+    right: 3%;
+    top: 10%;
 }
 audio::-webkit-media-controls-play-button{
     background-color: white;
